@@ -1,4 +1,9 @@
 import streamlit as st
 
-st.title("내 첫 번째 Streamlit 웹앱")
-st.write("여기에 내가 원하는 기능이나 분석 결과 넣기")
+st.title("간단한 계산기")
+
+num1 = st.number_input("첫 번째 숫자", value=0)
+num2 = st.number_input("두 번째 숫자", value=0)
+
+if st.button("더하기"):
+    st.write("결과:", num1 + num2)
